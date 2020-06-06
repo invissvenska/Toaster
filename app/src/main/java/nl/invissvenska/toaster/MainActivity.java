@@ -1,6 +1,7 @@
 package nl.invissvenska.toaster;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +16,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Toaster.Config.getInstance()
+//                .setGravity(Gravity.START, 950,0)
+                .setMargin(40f, 0f)
+                .apply();
+
         findViewById(R.id.buttonNormal).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Toaster.normal(getApplicationContext(), "Toast Normal", Toaster.LENGTH_LONG).show();
+            //    Toaster.Config.reset();
             }
         });
 

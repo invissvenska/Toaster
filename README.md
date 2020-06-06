@@ -83,8 +83,7 @@ Toaster.normal(yourContext, "Normal toast w/ icon", yourIconDrawable).show();
 
 You can also create your custom Toasts with the `custom()` method:
 ``` java
-Toaster.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, duration, withIcon, 
-shouldTint).show();
+Toaster.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, duration, withIcon, shouldTint).show();
 ```
 
 ## Screenshots
