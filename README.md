@@ -1,5 +1,5 @@
 # Toaster
-[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14) [![](https://jitpack.io/v/invissvenska/Toaster.svg)](https://jitpack.io/#invissvenska/Toaster) 
+[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14) [![](https://jitpack.io/v/invissvenska/Toaster.svg)](https://jitpack.io/#invissvenska/Toaster)  
 
 The usual Toast, but with steroids, based on [GrenderG Toasty](https://github.com/GrenderG/Toasty) but more options and using AndroidX library
 
@@ -88,7 +88,3 @@ shouldTint).show();
 ```
 
 ## Screenshots
-
-**Please click the image below to enlarge.**
-
-<img src="https://raw.githubusercontent.com/GrenderG/Toaster/master/art/collage.png">
