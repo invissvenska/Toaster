@@ -1,7 +1,7 @@
 # Toaster
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14) [![](https://jitpack.io/v/invissvenska/Toaster.svg)](https://jitpack.io/#invissvenska/Toaster)  
 
-The usual Toast, but with steroids, based on [GrenderG Toasty](https://github.com/GrenderG/Toasty) but more options and using AndroidX library
+Based on [GrenderG Toasty](https://github.com/GrenderG/Toasty) but using AndroidX library and more options: positioning of the toast and material design
 
 ## Prerequisites
 
@@ -39,6 +39,7 @@ Toaster.Config.getInstance()
     .allowQueue(boolean allowQueue) // optional (prevents several Toasters from queuing)
     .setGravity(int gravity, int offsetX, int offsetY) // optional
     .setMargin(float horizontalMargin, float verticalMargin) // optional
+    .setMaterial(boolean material) // optional
     .apply(); // required
 ```
 

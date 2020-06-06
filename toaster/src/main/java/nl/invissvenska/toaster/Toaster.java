@@ -34,6 +34,7 @@ public class Toaster {
 
     private static boolean tintIcon = true;
     private static boolean allowQueue = true;
+    private static boolean material = false;
 
     private static Toast lastToast = null;
 
@@ -283,7 +284,9 @@ public class Toaster {
         Drawable drawableFrame;
 
         if (shouldTint) {
-            drawableFrame = ToasterUtils.tint9PatchDrawableFrame(context, tintColor);
+            drawableFrame = ToasterUtils.tint9PatchDrawableFrame(context, tintColor, material);
+        } else if (material) {
+            drawableFrame = ToasterUtils.getDrawable(context, R.drawable.toast_frame_material);
         } else {
             drawableFrame = ToasterUtils.getDrawable(context, R.drawable.toast_frame);
         }
@@ -323,6 +326,7 @@ public class Toaster {
 
         private boolean tintIcon = Toaster.tintIcon;
         private boolean allowQueue = true;
+        private boolean material = false;
 
         private int gravity = Toaster.gravity;
         private int offsetX = Toaster.offsetX;
@@ -344,6 +348,7 @@ public class Toaster {
             Toaster.textSize = 16;
             Toaster.tintIcon = true;
             Toaster.allowQueue = true;
+            Toaster.material = false;
             Toaster.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
             Toaster.offsetX = 0;
             Toaster.offsetY = 63;
@@ -376,6 +381,12 @@ public class Toaster {
         }
 
         @CheckResult
+        public Config setMaterial(boolean material) {
+            this.material = material;
+            return this;
+        }
+
+        @CheckResult
         public Config setGravity(int gravity, int offsetX, int offsetY) {
             this.gravity = gravity;
             this.offsetX = offsetX;
@@ -395,6 +406,7 @@ public class Toaster {
             Toaster.textSize = textSize;
             Toaster.tintIcon = tintIcon;
             Toaster.allowQueue = allowQueue;
+            Toaster.material = material;
             Toaster.gravity = gravity;
             Toaster.offsetX = offsetX;
             Toaster.offsetY = offsetY;
