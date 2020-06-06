@@ -100,6 +100,24 @@
                 android:layout_marginEnd="@dimen/btn_margin"
                 android:text="@string/margin_button" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCustomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/custom_font_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonFormatted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/formatted_button" />
+
         </LinearLayout>
     </ScrollView>
 

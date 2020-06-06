@@ -37,6 +37,8 @@ Toaster.Config.getInstance()
     .setToastTypeface(@NonNull Typeface typeface) // optional
     .setTextSize(int sizeInSp) // optional
     .allowQueue(boolean allowQueue) // optional (prevents several Toasters from queuing)
+    .setGravity(int gravity, int offsetX, int offsetY) // optional
+    .setMargin(float horizontalMargin, float verticalMargin) // optional
     .apply(); // required
 ```
 

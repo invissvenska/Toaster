@@ -18,4 +18,7 @@
     <string name="gravity_toast">Floating in different gravity</string>
     <string name="margin_button">Margin</string>
     <string name="margin_toast">Toast with some margin</string>
+    <string name="custom_font_button">Custom font</string>
+    <string name="custom_font_toast">Custom font toast</string>
+    <string name="formatted_button">Formatted</string>
 </resources>

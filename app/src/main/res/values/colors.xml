@@ -5,4 +5,5 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorToastCustom">#9C27B0</color>
     <color name="colorToastCustom2">#FF5609</color>
+    <color name="colorFont">#14C300</color>
 </resources>
