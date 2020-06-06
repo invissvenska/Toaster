@@ -5,8 +5,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.0.0"
-        classpath "com.github.dcendents:android-maven-gradle-plugin:1.5"
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -21,15 +21,15 @@ allprojects {
 }
 
 ext {
-    compileSdkVersion = 28
-    buildToolsVersion = "29.0.2"
-    minSdkVersion = 24
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.2'
+    minSdkVersion = 14
     targetSdkVersion = compileSdkVersion
 
-    supportLibVersion = "1.1.0"
+    supportLibVersion = '1.1.0'
 
     versionCode = 1
-    versionName = "0.1"
+    versionName = '1.0.0'
 }
 
 task clean(type: Delete) {

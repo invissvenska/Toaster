@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,6 +26,12 @@ public class Toaster {
     private static Typeface currentTypeface = LOADED_TOAST_TYPEFACE;
     private static int textSize = 16;
 
+    private static int gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+    private static int offsetX = 0;
+    private static int offsetY = 63;
+    private static float horizontalMargin = 0f;
+    private static float verticalMargin = 0f;
+
     private static boolean tintIcon = true;
     private static boolean allowQueue = true;
 
@@ -32,6 +39,7 @@ public class Toaster {
 
     public static final int LENGTH_SHORT = Toast.LENGTH_SHORT;
     public static final int LENGTH_LONG = Toast.LENGTH_LONG;
+
 
     private Toaster() {
         // avoiding instantiation
@@ -295,6 +303,8 @@ public class Toaster {
         toastTextView.setTypeface(currentTypeface);
         toastTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
 
+        currentToast.setGravity(gravity, offsetX, offsetY);
+        currentToast.setMargin(horizontalMargin, verticalMargin);
         currentToast.setView(toastLayout);
 
         if (!allowQueue) {
@@ -303,10 +313,6 @@ public class Toaster {
             }
             lastToast = currentToast;
         }
-
-        //TODO fix config for positioning
-//        currentToast.setGravity(Gravity.START, 0, 0);
-//        currentToast.setMargin(0.1f, 0.2f);
 
         return currentToast;
     }
@@ -317,6 +323,12 @@ public class Toaster {
 
         private boolean tintIcon = Toaster.tintIcon;
         private boolean allowQueue = true;
+
+        private int gravity = Toaster.gravity;
+        private int offsetX = Toaster.offsetX;
+        private int offsetY = Toaster.offsetY;
+        private float horizontalMargin = Toaster.horizontalMargin;
+        private float verticalMargin = Toaster.verticalMargin;
 
         private Config() {
             // avoiding instantiation
@@ -332,6 +344,11 @@ public class Toaster {
             Toaster.textSize = 16;
             Toaster.tintIcon = true;
             Toaster.allowQueue = true;
+            Toaster.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+            Toaster.offsetX = 0;
+            Toaster.offsetY = 63;
+            Toaster.horizontalMargin = 0f;
+            Toaster.verticalMargin = 0f;
         }
 
         @CheckResult
@@ -358,11 +375,31 @@ public class Toaster {
             return this;
         }
 
+        @CheckResult
+        public Config setGravity(int gravity, int offsetX, int offsetY) {
+            this.gravity = gravity;
+            this.offsetX = offsetX;
+            this.offsetY = offsetY;
+            return this;
+        }
+
+        @CheckResult
+        public Config setMargin(float horizontalMargin, float verticalMargin) {
+            this.horizontalMargin = horizontalMargin;
+            this.verticalMargin = verticalMargin;
+            return this;
+        }
+
         public void apply() {
             Toaster.currentTypeface = typeface;
             Toaster.textSize = textSize;
             Toaster.tintIcon = tintIcon;
             Toaster.allowQueue = allowQueue;
+            Toaster.gravity = gravity;
+            Toaster.offsetX = offsetX;
+            Toaster.offsetY = offsetY;
+            Toaster.horizontalMargin = horizontalMargin;
+            Toaster.verticalMargin = verticalMargin;
         }
     }
 }

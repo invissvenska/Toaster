@@ -1,4 +1,4 @@
-package nl.invissvenska.toaster;
+package nl.invissvenska.toaster.sample;
 
 import org.junit.Test;
 

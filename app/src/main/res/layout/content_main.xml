@@ -5,53 +5,120 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <Button
-        android:id="@+id/buttonNormal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Toast Normal"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/buttonWarning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Toast Warning"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNormal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Toast Info"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonWarning" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/normal_button" />
 
-    <Button
-        android:id="@+id/buttonSuccess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Toast Success"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonInfo" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonIconNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/normal_icon_button" />
 
-    <Button
-        android:id="@+id/buttonError"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Toast Error"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSuccess" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/warning_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/info_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/success_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/error_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/custom_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonGravity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/gravity_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/margin_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCustomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/custom_font_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonFormatted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/formatted_button" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,6 +37,8 @@ Toaster.Config.getInstance()
     .setToastTypeface(@NonNull Typeface typeface) // optional
     .setTextSize(int sizeInSp) // optional
     .allowQueue(boolean allowQueue) // optional (prevents several Toasters from queuing)
+    .setGravity(int gravity, int offsetX, int offsetY) // optional
+    .setMargin(float horizontalMargin, float verticalMargin) // optional
     .apply(); // required
 ```
 
@@ -83,8 +85,11 @@ Toaster.normal(yourContext, "Normal toast w/ icon", yourIconDrawable).show();
 
 You can also create your custom Toasts with the `custom()` method:
 ``` java
-Toaster.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, duration, withIcon, 
-shouldTint).show();
+Toaster.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, duration, withIcon, shouldTint).show();
 ```
 
 ## Screenshots
+
+**Please click the image below to enlarge.**
+
+<img src="https://raw.githubusercontent.com/invissvenska/Toaster/master/media/collage.png">
