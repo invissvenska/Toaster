@@ -23,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.invissvenska:Toaster:1.4.2'
+	implementation 'com.github.invissvenska:Toaster:1.0.1'
 }
 ```
 
