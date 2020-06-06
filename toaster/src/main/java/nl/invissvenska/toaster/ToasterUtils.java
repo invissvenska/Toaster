@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat;
 public class ToasterUtils {
 
     private ToasterUtils() {
+        // avoiding instantiation
     }
 
     static Drawable tintIcon(@NonNull Drawable drawable, @ColorInt int tintColor) {
@@ -24,8 +25,9 @@ public class ToasterUtils {
         return drawable;
     }
 
-    static Drawable tint9PatchDrawableFrame(@NonNull Context context, @ColorInt int tintColor) {
-        final NinePatchDrawable toastDrawable = (NinePatchDrawable) getDrawable(context, R.drawable.toast_frame);
+    static Drawable tint9PatchDrawableFrame(@NonNull Context context, @ColorInt int tintColor, boolean material) {
+        final int toastFrame = material ? R.drawable.toast_frame_material : R.drawable.toast_frame;
+        final NinePatchDrawable toastDrawable = (NinePatchDrawable) getDrawable(context, toastFrame);
         return tintIcon(toastDrawable, tintColor);
     }
 
@@ -40,7 +42,7 @@ public class ToasterUtils {
         return AppCompatResources.getDrawable(context, id);
     }
 
-    static int getColor(@NonNull Context context, @ColorRes int color){
+    static int getColor(@NonNull Context context, @ColorRes int color) {
         return ContextCompat.getColor(context, color);
     }
 }

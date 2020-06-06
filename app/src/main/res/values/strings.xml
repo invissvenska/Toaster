@@ -14,6 +14,8 @@
     <string name="warning_toast">Warning, high voltage</string>
     <string name="custom_button">Custom</string>
     <string name="custom_toast">I\'m custom made</string>
+    <string name="material_button">Material</string>
+    <string name="material_toast">Toast in material style</string>
     <string name="gravity_button">Gravity</string>
     <string name="gravity_toast">Floating in different gravity</string>
     <string name="margin_button">Margin</string>

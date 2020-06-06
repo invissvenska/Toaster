@@ -77,6 +77,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.buttonMaterial).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toaster.Config.getInstance()
+                        .setMaterial(true)
+                        .apply();
+                Toaster.normal(getApplicationContext(), R.string.material_toast).show();
+                Toaster.Config.reset();// Use this if you want to use the configuration above only once
+            }
+        });
+
         findViewById(R.id.buttonGravity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
