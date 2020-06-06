@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
-//group = 'com.github.GrenderG'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.invissvenska'
 version = rootProject.ext.versionName
 
 android {
