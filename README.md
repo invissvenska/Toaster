@@ -89,3 +89,7 @@ Toaster.custom(yourContext, "I'm a custom Toast", yourIconDrawable, tintColor, d
 ```
 
 ## Screenshots
+
+**Please click the image below to enlarge.**
+
+<img src="https://raw.githubusercontent.com/invissvenska/Toaster/master/media/collage.png">
