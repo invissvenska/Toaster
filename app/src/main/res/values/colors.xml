@@ -3,4 +3,6 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="colorToastCustom">#9C27B0</color>
+    <color name="colorToastCustom2">#FF5609</color>
 </resources>

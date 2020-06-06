@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Toaster Demo</string>
+    <string name="error_button">Error</string>
+    <string name="error_toast">This is an error toast</string>
+    <string name="normal_button">Normal without icon</string>
+    <string name="normal_toast">Normal toast without icon</string>
+    <string name="normal_icon_button">Normal with icon</string>
+    <string name="normal_icon_toast">Normal toast with icon</string>
+    <string name="info_button">Info</string>
+    <string name="info_toast">A little bit of information</string>
+    <string name="success_button">Success</string>
+    <string name="success_toast">Successful</string>
+    <string name="warning_button">Warning</string>
+    <string name="warning_toast">Warning, high voltage</string>
+    <string name="custom_button">Custom</string>
+    <string name="custom_toast">I\'m custom made</string>
+    <string name="gravity_button">Gravity</string>
+    <string name="gravity_toast">Floating in different gravity</string>
+    <string name="margin_button">Margin</string>
+    <string name="margin_toast">Toast with some margin</string>
 </resources>

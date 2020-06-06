@@ -23,129 +23,84 @@
                 android:id="@+id/buttonNormal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Normal" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/normal_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonIconNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/normal_icon_button" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonWarning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Warning" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/warning_button" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Info" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/info_button" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonSuccess"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Success" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/success_button" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonError"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/error_button" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom9"
+                android:id="@+id/buttonCustom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/custom_button" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom8"
+                android:id="@+id/buttonGravity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/gravity_button" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom7"
+                android:id="@+id/buttonMargin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
+                android:layout_marginStart="@dimen/btn_margin"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:layout_marginEnd="@dimen/btn_margin"
+                android:text="@string/margin_button" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonCustom1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Toast Error" />
         </LinearLayout>
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
